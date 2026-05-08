@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Compilatore RDD (Invitalia)</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+    body {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #0e0e0e; }
+      a { color: #6aa9ff; }
+      hr { border-color: #2a2a2a; }
+      code { background: #1c1c1c; color: #e8e8e8; }
+    }
+    header {
+      display: flex; align-items: center; gap: 14px;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .logo {
+      width: 44px; height: 44px; border-radius: 8px;
+      background: #0a0a0a; color: #ffffff;
+      display: inline-flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 13px; letter-spacing: 0.5px;
+    }
+    h1 { margin: 0; font-size: 22px; font-weight: 700; }
+    h2 { font-size: 17px; margin-top: 28px; margin-bottom: 8px; }
+    .subtitle { margin: 2px 0 0; font-size: 13px; color: #6b6b6b; }
+    .meta { font-size: 13px; color: #6b6b6b; margin-bottom: 24px; }
+    code {
+      background: #f4f4f4; padding: 1px 6px; border-radius: 4px;
+      font-size: 13px; font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    }
+    a { color: #0066cc; }
+    ul { padding-left: 20px; }
+    li { margin: 4px 0; }
+    hr { border: none; border-top: 1px solid #e5e5e5; margin: 32px 0; }
+    .small { font-size: 13px; color: #6b6b6b; }
+    .back {
+      display: inline-block; margin-top: 16px;
+      font-size: 13px; color: #6b6b6b; text-decoration: none;
+    }
+    .back:hover { color: #0a0a0a; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">RDD</div>
+  <div>
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Compilatore RDD (Invitalia) — Estensione Chrome</p>
+  </div>
+</header>
+
+<p class="meta">Ultimo aggiornamento: 8 maggio 2026 &middot; Versione 1.0</p>
+
+<p>Questa informativa descrive come l'estensione Chrome <strong>Compilatore RDD (Invitalia)</strong> (di seguito, "l'estensione") tratta i dati dell'utente. Il rispetto della privacy è un valore fondamentale: l'estensione è progettata per minimizzare la raccolta di dati e per non trasferire informazioni a server gestiti dal titolare se non strettamente necessario al funzionamento.</p>
+
+<h2>1. Titolare del trattamento</h2>
+<p>Il titolare del trattamento dei dati è <strong>RDD Italia</strong> (di seguito "RDD" o "noi").</p>
+<ul>
+  <li>Sito web: <a href="https://www.rdditalia.com" target="_blank" rel="noopener">https://www.rdditalia.com</a></li>
+  <li>Per esercitare i diritti previsti dal GDPR, vedi la sezione "Diritti dell'utente".</li>
+</ul>
+
+<h2>2. Quali dati l'estensione tratta</h2>
+<p>L'estensione tratta esclusivamente i seguenti dati, tutti forniti volontariamente dall'utente:</p>
+<ul>
+  <li><strong>Chiave API OpenAI</strong>: una credenziale personale fornita dall'utente nelle impostazioni dell'estensione, necessaria per autenticare le chiamate ai server di OpenAI.</li>
+  <li><strong>Documenti aziendali</strong> (PDF, DOCX) caricati dall'utente per estrarne il testo da utilizzare nella compilazione dei form. Possono contenere dati identificativi dell'azienda e di persone fisiche (nome, indirizzo, email, codice fiscale, partita IVA, ecc.).</li>
+  <li><strong>Schema dei form Invitalia</strong>: nome, etichetta, tipo e opzioni dei campi presenti nella pagina del bando aperta dall'utente. <em>Nessun valore già inserito nei campi viene letto.</em></li>
+  <li><strong>Preferenze utente</strong>: modello AI selezionato, tema dell'interfaccia.</li>
+</ul>
+
+<h2>3. Dati che l'estensione NON tratta</h2>
+<ul>
+  <li>Cookie del browser, sessioni, password salvate o credenziali SPID/CIE/CNS dell'utente.</li>
+  <li>Storage o dati di siti diversi da <code>*.invitalia.it</code>.</li>
+  <li>Cronologia di navigazione, posizione geografica, attività di mouse/tastiera al di fuori del widget.</li>
+  <li>Identificatori univoci di dispositivo, fingerprinting, analytics di utilizzo.</li>
+</ul>
+
+<h2>4. Dove vengono memorizzati i dati</h2>
+<p>I dati personali e i documenti restano <strong>esclusivamente nel browser dell'utente</strong>, salvati tramite l'API <code>chrome.storage</code>:</p>
+<ul>
+  <li><code>chrome.storage.sync</code>: chiave API OpenAI, modello AI, preferenze. Se l'utente ha attiva la sincronizzazione di Chrome, questi dati possono essere replicati sui dispositivi sincronizzati dello stesso utente.</li>
+  <li><code>chrome.storage.local</code>: documenti caricati (fino a 10 MB), cache temporanea. Non lasciano mai il dispositivo.</li>
+</ul>
+<p><strong>Nessun dato viene inviato a server di RDD Italia.</strong> RDD non ospita backend, non riceve copie dei documenti né delle chiavi API, non registra log di utilizzo.</p>
+
+<h2>5. Trasferimenti a terzi: OpenAI</h2>
+<p>Quando l'utente preme il bottone <strong>Compila</strong>, l'estensione invia i seguenti dati ai server di <strong>OpenAI, L.L.C.</strong> (USA), all'endpoint <code>https://api.openai.com/v1/chat/completions</code>:</p>
+<ul>
+  <li>Lo schema dei campi del form della pagina aperta;</li>
+  <li>Il testo estratto dai documenti che l'utente ha selezionato per la compilazione corrente;</li>
+  <li>Una richiesta di tipo "completion" autenticata con la chiave API dell'utente.</li>
+</ul>
+<p>OpenAI è il fornitore del servizio di intelligenza artificiale. RDD non ha alcun ruolo di intermediazione in questo trasferimento: l'utente, configurando la propria chiave API, instaura un rapporto diretto con OpenAI. L'estensione si limita ad agire come client locale che facilita la chiamata.</p>
+<p>Privacy policy di OpenAI: <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">https://openai.com/policies/privacy-policy</a></p>
+<p class="small">Per le modalità di trattamento dei dati da parte di OpenAI (incluse le impostazioni "data retention" e "training opt-out") fare riferimento al pannello di controllo del proprio account OpenAI su <a href="https://platform.openai.com/" target="_blank" rel="noopener">platform.openai.com</a>.</p>
+
+<h2>6. Finalità del trattamento</h2>
+<p>I dati sopra descritti sono trattati esclusivamente per le seguenti finalità:</p>
+<ul>
+  <li>Identificare i campi del form del bando Invitalia aperto dall'utente.</li>
+  <li>Generare suggerimenti di compilazione tramite OpenAI a partire dai documenti dell'utente.</li>
+  <li>Inserire i suggerimenti nei rispettivi campi del form.</li>
+  <li>Conservare le credenziali e i documenti tra una sessione e l'altra per evitare ricaricamenti ripetuti.</li>
+</ul>
+<p>I dati <strong>non vengono utilizzati</strong> per profilazione, marketing, analisi commerciali, valutazione dell'affidabilità creditizia o altre finalità non correlate al funzionamento dell'estensione.</p>
+
+<h2>7. Base giuridica (GDPR)</h2>
+<p>Il trattamento si basa sul <strong>consenso esplicito</strong> dell'utente, manifestato dall'installazione dell'estensione, dalla configurazione della chiave API e dal caricamento volontario dei documenti. L'utente può revocare il consenso in qualsiasi momento disinstallando l'estensione e/o cancellando i propri dati come descritto al punto 9.</p>
+
+<h2>8. Conservazione dei dati</h2>
+<p>I dati restano nel browser dell'utente fino a quando l'utente stesso non li rimuove (eliminando i documenti dall'interfaccia del widget, revocando la chiave API o disinstallando l'estensione). RDD non conserva alcun dato.</p>
+<p>I dati inviati a OpenAI sono soggetti alle politiche di conservazione di OpenAI.</p>
+
+<h2>9. Diritti dell'utente (GDPR Art. 15-22)</h2>
+<p>L'utente residente nell'Unione Europea può esercitare in qualsiasi momento i diritti previsti dal Regolamento UE 2016/679 (GDPR):</p>
+<ul>
+  <li><strong>Accesso</strong>: tutti i dati trattati dall'estensione sono visibili nel widget e nelle impostazioni.</li>
+  <li><strong>Rettifica</strong>: l'utente può modificare la chiave API, i documenti e le preferenze in qualunque momento.</li>
+  <li><strong>Cancellazione</strong>: l'utente può eliminare singolarmente i documenti, sostituire la chiave API o disinstallare l'estensione (tutti i dati vengono cancellati). Per revocare anche la chiave API lato OpenAI vedi <a href="https://platform.openai.com/api-keys" target="_blank" rel="noopener">platform.openai.com/api-keys</a>.</li>
+  <li><strong>Portabilità</strong>: i documenti caricati restano nei file originali sul dispositivo dell'utente.</li>
+  <li><strong>Reclamo all'autorità di controllo</strong>: l'utente può presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>).</li>
+</ul>
+
+<h2>10. Sicurezza</h2>
+<p>L'estensione adotta le seguenti misure di sicurezza:</p>
+<ul>
+  <li>Storage locale tramite API native Chrome (<code>chrome.storage</code>), protetto dal sandbox del browser.</li>
+  <li>Comunicazione esclusivamente via HTTPS (TLS 1.2+) con i server di OpenAI.</li>
+  <li>Nessun server intermedio gestito da RDD: non esistono "punti di intercettazione" tra il browser dell'utente e OpenAI.</li>
+  <li>Codice dell'estensione disponibile su richiesta per audit di sicurezza.</li>
+</ul>
+
+<h2>11. Minori</h2>
+<p>L'estensione è destinata a un utilizzo professionale (compilazione di domande di finanziamento) e non è rivolta a minori di 16 anni. Non raccogliamo intenzionalmente dati di minori.</p>
+
+<h2>12. Modifiche a questa informativa</h2>
+<p>Eventuali modifiche a questa informativa verranno pubblicate sulla stessa pagina con aggiornamento della data in cima. In caso di modifiche sostanziali, gli utenti verranno informati al primo avvio successivo dell'estensione.</p>
+
+<h2>13. Contatti</h2>
+<p>Per qualsiasi richiesta relativa a questa informativa o ai propri dati, è possibile contattare RDD Italia tramite il sito ufficiale: <a href="https://www.rdditalia.com" target="_blank" rel="noopener">https://www.rdditalia.com</a></p>
+
+<hr />
+
+<p class="small">Compilatore RDD (Invitalia) — Estensione Chrome ad uso interno RDD Italia &middot; <a class="back" href="javascript:window.close()">Chiudi questa pagina</a></p>
+
+</body>
+</html>
